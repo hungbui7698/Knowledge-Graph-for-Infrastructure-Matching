@@ -1,0 +1,2 @@
+1000330	1000330	UserApp_require_Network_Slice
+1000330	1000330	UserApp_require_Cloud_Slice

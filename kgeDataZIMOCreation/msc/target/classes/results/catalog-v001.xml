@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP" uri="file:/D:/BA%20Le%20Hung%20Bui/kgeDataZIMOCreation/msc/src/main/resources/ZIMO_App_KnowledgeBase.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP" uri="file:/D:/BA%20Le%20Hung%20Bui/kge-data-zimo-creation/ZIMO_App_KnowledgeBase.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP" uri="file:/D:/BA%20Le%20Hung%20Bui/kge-data-zimo-Hung/msc/src/main/resources/ZIMO_App_KnowledgeBase.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1654072672499" name="duplicate:http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP-Instances" uri="ontologyZIMO48985.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1654072672499" name="duplicate:http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP-Instances" uri="ontologyZIMO64588.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1654072672499" name="duplicate:http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP-Instances" uri="ontology_Testcase_1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1654072672499" name="duplicate:http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP-Instances" uri="ontology_Testcase_2.owl"/>
+    </group>
+</catalog>

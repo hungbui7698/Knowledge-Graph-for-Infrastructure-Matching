@@ -1,0 +1,3816 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#"
+     xml:base="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM"
+     xmlns:GSM="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:ZIMOAPP="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App_Instance_Sastify_UserApp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App_Instance_Sastify_UserApp">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_App_Instance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App_Instance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour_require_Cloud_Slice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour_require_Cloud_Slice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Sastify_Cloud_Flavour"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Sastify_Cloud_Flavour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Sastify_Cloud_Flavour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Sastify_UserApp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Sastify_UserApp">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_Cloud_Slice"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Minimal_require -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Minimal_require">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour_require_Network_Slice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour_require_Network_Slice">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice_Sastify_Network_Flavour"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice_Sastify_Network_Flavour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice_Sastify_Network_Flavour">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice_Sastify_UserApp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice_Sastify_UserApp">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_Network_Slice"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_App_Instance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_App_Instance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App_Instance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_Attributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_Attributes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_Attributes_Inv"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_Attributes_Inv -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_Attributes_Inv"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_Cloud_Slice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_Cloud_Slice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_Network_Slice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_require_Network_Slice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_App -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_App">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_App_Inv"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_App_Inv -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_App_Inv"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_User -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_User">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_User_Inv"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_User_Inv -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_User_Inv"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_App_Instance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_App_Instance">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_App_Instance_Inv"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App_Instance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_App_Instance_Inv -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_App_Instance_Inv"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_Inv"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App_Instance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_Attributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_Attributes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_Attributes_Inv"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour_Attributes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_Attributes_Inv -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_Attributes_Inv"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_Inv -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_Inv"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Provider"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice_Attributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice_Attributes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice_Attributes_Inv"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Attributes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice_Attributes_Inv -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice_Attributes_Inv"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour_Inv"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App_Instance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour_Attributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour_Attributes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour_Attributes_Inv"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour_Attributes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour_Attributes_Inv -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour_Attributes_Inv"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour_Inv -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour_Inv"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Provider"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Attributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Attributes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Attributes_Inv"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Attributes_Inv -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Attributes_Inv"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_CPU -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_CPU">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_RAM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_RAM">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_RAM"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_Storage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour_Storage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Storage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice_CPU -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice_CPU">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#CPU_Slice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice_RAM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice_RAM">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#RAM_Slice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice_Storage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Slice_Storage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Storage_Slice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour_Density -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour_Density">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Density"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour_Device_Mobility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Flavour_Device_Mobility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Mobility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_3GPP_5QI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_3GPP_5QI">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3GPP_5QI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Availability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Availability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Availability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Averaging_Window -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Averaging_Window">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Averaging_Window"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_DC_Periodicity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_DC_Periodicity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#DC_Periodicity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Guaranteed_downlink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Guaranteed_downlink">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Guaranteed_downlink_throughput_quota"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Guaranteed_uplink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Guaranteed_uplink">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Guaranteed_uplink_throughput_quota"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Latency_from_last_UPF_to_Application_Server -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Latency_from_last_UPF_to_Application_Server">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Latency_from_last_UPF_to_Application_Server"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_Data_Burst_Volume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_Data_Burst_Volume">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_Data_Burst_Volume"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_Packet_Loss_Rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_Packet_Loss_Rate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_Packet_Loss_Rate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_downlink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_downlink">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_downlink_throughput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_downlink_per_UE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_downlink_per_UE">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_downlink_throughput_per_UE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_number_of_PDU_sessions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_number_of_PDU_sessions">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_number_of_PDU_sessions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_number_of_UEs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_number_of_UEs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_number_of_UEs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_supported_packet_size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_supported_packet_size">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_supported_packet_size"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_uplink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_uplink">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_uplink_throughput"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_uplink_per_UE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Maximum_uplink_per_UE">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_uplink_throughput_per_UE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_PS_Accuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_PS_Accuracy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Accuracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Packet_Delay_Budget -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Packet_Delay_Budget">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Packet_Delay_Budget"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Packet_Error_Rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Packet_Error_Rate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Packet_Error_Rate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Priority_Level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Priority_Level">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Priority_Level"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Supported_device_velocity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Supported_device_velocity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Supported_device_velocity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Synchronicity_Accuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_Synchronicity_Accuracy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Accuracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_UE_Density -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Network_Slice_UE_Density">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UE_density"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_UserApp_Requirement_NumberOfUser -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_UserApp_Requirement_NumberOfUser">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Number_of_User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App">
+        <rdfs:comment>Cloud Application, which is developed by App Developer</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App_Instance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App_Instance">
+        <rdfs:comment>is a copy of App, which has Network requirement(Network Flavour) for Network provider and Cloud requirement(Cloud Flavour) for Cloud provider to sastify User requirement on App.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Area_Of_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Area_Of_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute specifies the area where the UEs can access a particular network slice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Availability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Availability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>percentage value of the amount of time the end-to-end
+communication service is delivered according to an agreed QoS, divided by the amount of
+time the system is expected to deliver the end-to-end service according to the specification
+in a specific area, see also 3GPP TS 22.261 [27].</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Averaging_Window -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Averaging_Window">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Slice_quality_of_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Business -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Business">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour_Attributes"/>
+        <rdfs:comment>Service Level Agreement (SLA) for own
+infra or outsourced: Is there high
+reliability required by contract, or is it
+best-effort basis?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#CPU_Slice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#CPU_Slice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Area_of_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Area_of_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour">
+        <rdfs:comment>defines the size of compute resources, that can be assigned automatically to virtual machine instances in a cloud configuration. The Cloud Flavour is defined by App Developer for an App. The Cloud Flavour is to be matched to the suitable Cloud Slice</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour_Attributes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour_Attributes">
+        <rdfs:comment>Attributes of Cloud Flavour, that are required by App Developer for the App</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Provider">
+        <rdfs:comment>Organizations, that provide Cloud</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice">
+        <rdfs:comment>Slice Instance of Cloud, which is provided by Cloud Provider. Apps will be deployed on the this Slice, if the Slice is sastify the Flavour of the App.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Attributes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Attributes">
+        <rdfs:comment>Attributes of Cloud Slice, that are defined by Cloud Provider.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Connectivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Connectivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour_Attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#DC_Availability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#DC_Availability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Deterministic_communication"/>
+        <rdfs:comment>This parameter describes if the network slice supports deterministic communication.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#DC_Periodicity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#DC_Periodicity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Deterministic_communication"/>
+        <rdfs:comment>This parameter provides a list of periodicities supported by the network slice</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_access_per_data_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_access_per_data_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_network_access"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Tunnelling_mechanism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_network_access -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_network_access">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>For each Supported data network list value in the Supported data networks attribute (see
+clause 3.4.39). This attribute defines how the network slice supported data networks handle
+the user data.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Delay_tolerance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Delay_tolerance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>Provide the NSC with service delivery flexibility, especially for the vertical services that are
+not chasing a high system performance. For instance, the service will be delivered once the
+mobile system has sufficient resources or during the off-peak hours. For this type of traffic, it
+is not too critical how long it takes to deliver the amount of data, e.g. within hours, days,
+weeks, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Deterministic_communication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Deterministic_communication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute defines if the network slice supports deterministic communication for periodic
+UE traffic. Periodic traffic refers to the type of traffic with periodic transmissions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour_Attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Mobility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Mobility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Downlink_maximum_throughput_per_UE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Downlink_maximum_throughput_per_UE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes the maximum data rate supported by the network slice per UE in
+downlink.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Downlink_throughput_per_network_slice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Downlink_throughput_per_network_slice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute relates to the aggregated data rate in downlink for all UEs together in the
+network slice (this is not per UE).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Energy_efficiency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Energy_efficiency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes whether the network slice supports the energy efficiency KPI.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_CPU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_CPU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour_Attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Data_Volume_per_device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Data_Volume_per_device">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Connectivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Data_security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Data_security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Connectivity"/>
+        <rdfs:comment>Data security: How critical the data
+protection (encryption, integrity,
+identity, etc.) is?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Density -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Density">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Connectivity"/>
+        <rdfs:comment>Typical number of simultaneously
+communicating devices within the area
+of operations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Energy_efficiency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Energy_efficiency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Connectivity"/>
+        <rdfs:comment>Are terminals transmitting actively (active calls / data
+transmission vs. idle):</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Isolation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Isolation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Connectivity"/>
+        <rdfs:comment>Isolation: Does the use case require
+isolation for security reasons</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Latency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Latency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Connectivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_RAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_RAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour_Attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Reliability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Reliability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Connectivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Flavour_Attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Throughput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Throughput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Connectivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Traffic_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Traffic_type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Connectivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Typical_data_profile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Typical_data_profile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Connectivity"/>
+        <rdfs:comment>Traffic of typical usage mostly</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Functional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Functional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GSMA_Template_Slice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GSMA_Template_Slice">
+        <rdfs:comment>NG.116-v6.0: GSMA Slice Template.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GSMA_Template_Slice"/>
+        <rdfs:comment>Attributes of Network Slice, that are defined by Network Provider with GSMA Standard.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes which type of group communication is provided by the network slice.
+This attribute applies to 3GPP access type only.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Guaranteed_downlink_throughput_quota -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Guaranteed_downlink_throughput_quota">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Downlink_throughput_per_network_slice"/>
+        <rdfs:comment>This parameter describes the guaranteed throughput/data rate supported by the network
+slice for the aggregate of all GBR QoS flows in downlink belonging to the set of all UEs using
+the network slice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Guaranteed_uplink_throughput_quota -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Guaranteed_uplink_throughput_quota">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Uplink_throughput_per_network_slice"/>
+        <rdfs:comment>This parameter describes the guaranteed throughput/data rate supported by the network
+slice for the aggregate of all GBR QoS flows in uplink belonging to the set of all UEs using
+the network slice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation_level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation_level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation_level">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Latency_from_last_UPF_to_Application_Server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Latency_from_last_UPF_to_Application_Server">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This optional attribute specifies maximum or worst case one-way latency between UPF and
+application server offered by the slice. This does not include latency introduced by the
+application server. In the case of chained UPFs, this refers to the last UPF (in the chain)
+towards the application server. This attribute extends what is covered by the 3GPP QoS
+PDB attribute (see GST QoS attribute) which is only between UE and UPF. This is an
+optional attribute for network slices that offer latency objectives between UPF and
+application server residing within the operator network.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Logical_Isolation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Logical_Isolation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation_level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MMTel_support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MMTel_support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes whether the network slice supports IP Multimedia Subsystem (IMS)
+and Multimedia Telephony Service MMTel. This attribute describes whether the GSMA PRD
+NG.114 [22] compliant MMTel deployment is supported in the network slice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_Data_Burst_Volume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_Data_Burst_Volume">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Slice_quality_of_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_Packet_Loss_Rate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_Packet_Loss_Rate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Slice_quality_of_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_downlink_throughput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_downlink_throughput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Downlink_throughput_per_network_slice"/>
+        <rdfs:comment>This parameter defines the maximum data rate supported by the network slice for all UEs
+together in downlink.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_downlink_throughput_per_UE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_downlink_throughput_per_UE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Downlink_maximum_throughput_per_UE"/>
+        <rdfs:comment>This parameter defines the Maximum Downlink Throughput per UE value. This may be
+associated with a Service Category parameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_number_of_PDU_sessions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_number_of_PDU_sessions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes the maximum number of concurrent PDU supported by the network
+slice as specified by the &quot;Maximum number of PDU sessions&quot; parameter. If the network slice
+also requires taking into account PDN connections that can be handed over to the 5GS while
+the UEs are in the EPS, this is specified in the optional attribute &quot;EPS counting required&quot;. If
+the parameter &quot; EPS counting required&quot; is missing, then no counting happens of any PDN
+connections in EPS.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_number_of_UEs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_number_of_UEs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes the maximum number of UEs that can use the network slice
+simultaneously as specified by the &quot;Maximum number of UEs&quot; parameter. If the network
+slice also requires taking into account UEs using PDN connections that can be handed over
+to the 5GS while they are in the EPS, this is specified in the optional attribute &quot;EPS counting
+required&quot;. If the parameter &quot; EPS counting required&quot; is missing, then no counting of UEs
+happens while they are in EPS.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_supported_packet_size -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_supported_packet_size">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes the maximum packet size supported by the network slice and may
+be important for URLLC (Ultra-Reliable Low Latency Communication) and MIoT (Massive
+IoT), or to indicate a supported maximum transmission unit (MTU).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_uplink_throughput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_uplink_throughput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Uplink_throughput_per_network_slice"/>
+        <rdfs:comment>This parameter describes the maximum data rate supported by the network slice for all UEs
+together in uplink</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_uplink_throughput_per_UE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_uplink_throughput_per_UE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Uplink_maximum_throughput_per_UE"/>
+        <rdfs:comment>This parameter defines the Maximum Uplink Throughput per UE value. This may be
+associated with a Service Category parameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_capability_support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_capability_support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission_critical_support"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_service_support"/>
+        <rdfs:comment>This parameter specifies what capabilities are available to support mission-critical services.
+More than one capability may be supported at once. This parameter must be present if
+Mission critical support is set to Mission-critical.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_service_support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_service_support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission_critical_support"/>
+        <rdfs:comment>This parameter specifies whether or not the network slice supports mission-critical push-totalk (MCPTT) [15], mission-critical data (MCData) [16], mission-critical video (MCVideo) [17],
+or mission-critical interworking [20].</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission_critical_support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission_critical_support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>Mission-critical (MC) leads to a priority of the network slice relative to others, for C-plane
+(Control Plane) and U-plane (User Plane) decisions. This is relative to a customer provider
+relationship and to a PMN (Public Mobile Network)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Monitoring_sample_frequency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Monitoring_sample_frequency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Performance_monitoring"/>
+        <rdfs:comment>This parameter describes how often the KQIs and KPIs are monitored</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>Multimedia Priority Service (MPS) leads to priority of traffic relative to other traffic.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_capability_support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_capability_support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_support"/>
+        <rdfs:comment>This parameter specifies what capabilities are available to support MPS. More than one
+capability may be supported at once. This parameter must be present if Multimedia Priority
+Service support is set to “MPS”.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service"/>
+        <rdfs:comment>This parameter specifies whether or not the network slice supports MPS for MMTel voice,
+MPS for MMTel video, and/or MPS for Data as specified in 3GPP TS 22.153 [31].</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NB-IoT_Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NB-IoT_Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes whether NB-IoT is supported in the RAN in the network slice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GSMA_Template_Slice"/>
+        <rdfs:comment>Network Slice Type
+NG.116-v6.0</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NSSAA_required -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NSSAA_required">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute specifies whether for the Network Slice, devices need to be also authenticated
+and authorized by a AAA server using additional credentials different than the ones used for
+the primary authentication (see Rel-16 of 3GPP TS 23.501 [1] clause 5.15.10 for a definition
+of the Network Slice Specific Authentication and Authorization feature).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour">
+        <rdfs:comment>defines the network requirement of the app that matches different requirement of users. The Network Flavour is defined by App Developer for an App. The Network Flavour sastify the user&apos;s requirements on App, plays a role of middleware to order/request a suitable Network Slice. The Network Flavour is to be matched to the suitable Network Slice. End User will then match with network Slice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour_Attributes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour_Attributes">
+        <rdfs:comment>Attributes of Network Flavour, that are required by App Developer that sastify the user requirement on App</rdfs:comment>
+        <rdfs:comment>GSMA: NG.130-White-Paper-Network-Slicing-NA-Perspective-1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Provider">
+        <rdfs:comment>Organizations, that provide Network Slice</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice">
+        <rdfs:comment>Slice Instance of Network, which is provided by Network Provider. End User will be connected to the Server on Cloud, where the App is deployed with the Network, if the Network Slice sastifies the Network Flavour of the App bzw. User&apos;s requirement on App.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_functions_owned_by_Network_Slice_Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_functions_owned_by_Network_Slice_Customer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>A NSC can own some network functions. This attribute provides a list of network functions to
+be provided by the NSC. If the list is empty, or this attribute is not included, the NSC is not
+providing any network function relevant for the network slice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_slice_energy_efficiency_KPI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_slice_energy_efficiency_KPI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Energy_efficiency"/>
+        <rdfs:comment>Network slice energy efficiency KPI is defined in 3GPP Release 17 TS 28.554 Section 6.7
+[32]. It is defined as a ratio between the performance of a network slice and its energy
+consumption.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Non_Functional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Non_Functional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Operation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Operation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour_Attributes"/>
+        <rdfs:comment>How dynamic your communication
+service would need to be? E.g., do you
+need to change the maximum data rate
+suddenly?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PM_Availability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PM_Availability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Performance_monitoring"/>
+        <rdfs:comment>This parameter contains a list of KQIs and KPIs available for monitoring. If the list is empty
+this parameter is not available in the network slice and the other parameters might be
+ignored.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Availability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Availability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Performance_prediction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Prediction_frequency"/>
+        <rdfs:comment>This parameter contains a list of KQIs and KPIs available for prediction. If the list is empty,
+the parameter is not available in the network slice and the other parameters might be
+ignored.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Accuracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Accuracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Positioning_support"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability"/>
+        <rdfs:comment>This parameter describes the accuracy of the location information. Accuracy depends on the
+respective positioning solution applied in the network slice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Positioning_support"/>
+        <rdfs:comment>This parameter describes if this parameter is provided by the network slice and contains a
+list of positioning methods provided by the slice. If the list is empty this parameter is not
+available in the network slice and the other parameters might be ignored.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Prediction_frequency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Prediction_frequency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Positioning_support"/>
+        <rdfs:comment>This parameter describes how often location information is provided. This parameter simply
+defines how often the customer is allowed to request location information. This is not related
+to the time it takes to determine the location, which is a characteristic of the positioning
+method.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Packet_Delay_Budget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Packet_Delay_Budget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Slice_quality_of_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Packet_Error_Rate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Packet_Error_Rate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Slice_quality_of_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Performance_monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Performance_monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute provides the capability for NSC and NOP to monitor Key Quality Indicators
+(KQIs) and Key Performance Indicators (KPIs). KQIs reflect the end-to-end service
+performance and quality while KPIs reflect the performance of the network.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Performance_prediction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Performance_prediction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute defines the capability to allow the mobile system to predict the network and
+service status. Predictive QoS (Quality of Service) can be done for various Key Quality
+Indicators (KQIs) and Key Performance Indicators (KPIs). KQIs reflect the end-to-end
+service performance and quality, while KPIs reflect the performance of the network. The
+prediction is done for a specific point of time in the future and for a specific geolocation.
+Only the KQIs of communication services offered by the NSP can be predicted. For over the
+top services, the NSP is not able to access the KQIs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Physical_Isolation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Physical_Isolation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation_level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Positioning_support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Positioning_support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes if the network slice provides geo-localization methods or supporting
+methods</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Prediction_frequency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Prediction_frequency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Performance_prediction"/>
+        <rdfs:comment>This parameter describes how often KQIs and KPIs prediction values are provided.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Priority_Level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Priority_Level">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Slice_quality_of_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Quality_of_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Quality_of_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#RAM_Slice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#RAM_Slice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Radio_spectrum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Radio_spectrum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>Defines the radio spectrum in which the network slice should be supported. This is important
+information, as
+• some UEs of the NSC might be capable of using certain frequency bands only.
+• The NSC may only own or have access to certain frequency bands.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Region_specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Region_specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Area_Of_Service"/>
+        <rdfs:comment>For every single country listed in the area of service attribute it needs to be indicated if the
+service will be provided in the whole country or just in part of the country.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Resource_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Resource_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Slice_quality_of_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Root_cause_investigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Root_cause_investigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>Root cause investigation is the capability provided to NSC to understand or investigate the
+root cause of network service performance degradation or failure.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Session_and_Service_Continuity_support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Session_and_Service_Continuity_support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>The attribute defines the continuity of a Protocol Data Unit (PDU) session. The following
+three Session and Service Continuity (SSC) modes are specified [1]:
+• SSC mode 1 - the network preserves the connectivity service provided to the UE (for
+the case of IPv4, IPv6 or IPv4v6 type, the IP address is preserved)
+• SSC mode 2 - the network may release the connectivity service delivered to the UE
+and release the corresponding PDU Session. For the case of IPv4 or IPv6 or IPv4v6
+type, the release of the PDU Session induces the release of IP address(es) that had
+been allocated to the UE.
+• SSC mode 3 - changes to the user plane can be visible to the UE, while the network
+ensures that the UE suffers no loss of connectivity. A connection through new PDU
+Session Anchor point is established before the previous connection is terminated in
+order to allow for better service continuity. For the case of IPv4 or IPv6 or IPv4v6
+type, the IP address is not preserved in this mode when the PDU Session Anchor
+changes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Simultaneous_Use_Class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Simultaneous_Use_Class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Simultaneous_use_of_the_network_slice"/>
+        <rdfs:comment>This parameter defines which class of simultaneous use applies. This may be associated
+with a Service Category parameter</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Simultaneous_use_of_the_network_slice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Simultaneous_use_of_the_network_slice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes whether a network slice can be simultaneously used by a UE
+together with other network slices and if so, with which other classes of network slices. The
+attribute is comprised of a list of Service Category Parameters with the associated
+Simultaneous Use Class parameter value.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Slice_quality_of_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Slice_quality_of_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute defines all the QoS relevant parameters supported by the network slice. For
+some of these parameters, 3GPP has already defined standard values [1]. By preselecting a
+5G QoS Identifier (5QI) these parameters will automatically be filled out with the
+standardised values. A list of available 5QIs and the standardised values can be found in
+Additional Information. For customized 5QIs, parameter values must be selected, as well as
+when non default values are used for Standardised 5QI.
+This attribute applies to 3GPP access type only</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Storage_Slice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Storage_Slice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Support_for_non-IP_traffic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Support_for_non-IP_traffic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Supported_data_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Supported_data_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes the data networks the network slice provides access to. The attribute
+is comprised of a list of Service category parameters with the associated network or
+networks list.
+If no Service category parameters are present, all UEs in the network slice are associated
+with the same network or list of networks.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Supported_data_networks_list -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Supported_data_networks_list">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Supported_data_network"/>
+        <rdfs:comment>This parameter defines which data networks the network slice provides access to. This may
+be associated with a Service Category parameter</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Supported_device_velocity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Supported_device_velocity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>Maximum speed supported by the network slice at which a defined QoS and seamless
+transfer between TRxPs (Transmission Reception Point(s)), which may belong to different
+deployment layers and/or radio access technologies (multi-layer /-RAT), can be achieved.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute provides synchronicity of communication devices. Two cases are most
+important in this context:</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Accuracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Accuracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Availability"/>
+        <rdfs:comment>This parameter describes the accuracy of the synchronicity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Availability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Availability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity"/>
+        <rdfs:comment>The synchronicity between devices over PC5 in absence of the network is not in scope of
+this parameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Tunnelling_mechanism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Tunnelling_mechanism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_network_access"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UE_density -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UE_density">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes the maximum number of connected and/or accessible devices per
+unit area (per km2
+) supported by the network slice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Uplink_maximum_throughput_per_UE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Uplink_maximum_throughput_per_UE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes the maximum data rate supported by the network slice per UE in
+uplink.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Uplink_throughput_per_network_slice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Uplink_throughput_per_network_slice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute relates to the aggregated data rate in uplink for all UEs together in the network
+slice (this is not per UE).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Use_case -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Use_case">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Flavour_Attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#User">
+        <rdfs:comment>End User, who use App, Network and Cloud</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp">
+        <rdfs:comment>Instance of User require diffenrently on different App</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Area">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Functional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Availability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Availability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Non_Functional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Cost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Cost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Non_Functional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Error_rate_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Error_rate_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Quality_of_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Jitter_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Jitter_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Quality_of_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Latency_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Latency_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Quality_of_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Number_of_User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Number_of_User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Functional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Portability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Portability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Non_Functional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Reliability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Reliability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Non_Functional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Requirement">
+        <rdfs:comment>User requirements on App</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Non_Functional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Throughput_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Throughput_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Quality_of_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#User_management_openness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#User_management_openness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes the capability for the NSC to manage their users or groups of users’
+network services and corresponding requirements. For instance, if NSC Y orders a network
+slice which is capable to support X users of Y, then Y should be capable to decide which X
+users could use this network slice. Hence, Y could manage the users, in terms of add,
+modify or delete users to receive network services provided by the specific network slice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#GST_Slice"/>
+        <rdfs:comment>This attribute describes if the V2X communication mode is supported by the network slice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Use_case"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3GPP_5QI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3GPP_5QI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Slice_quality_of_service"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Business_0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Business_0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Business"/>
+        <rdfs:comment>Business_best_effort_basis</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Business_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Business_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Business"/>
+        <rdfs:comment>Business_high_reliability</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Can_be_used_simultaneously_with_any_network_slice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Can_be_used_simultaneously_with_any_network_slice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Simultaneous_Use_Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Can_be_used_simultaneously_with_any_network_slice_with_the_same_SD_value_but_different_SST_value -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Can_be_used_simultaneously_with_any_network_slice_with_the_same_SD_value_but_different_SST_value">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Simultaneous_Use_Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Can_be_used_simultaneously_with_any_network_slices_with_same_SST_value_but_different_SD_values -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Can_be_used_simultaneously_with_any_network_slices_with_same_SST_value_but_different_SD_values">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Simultaneous_Use_Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cannot_be_used_simultaneously_with_any_another_network_slice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cannot_be_used_simultaneously_with_any_another_network_slice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Simultaneous_Use_Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#DC_Availability_not_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#DC_Availability_not_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#DC_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#DC_Availability_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#DC_Availability_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#DC_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_Volume_per_device_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_Volume_per_device_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Data_Volume_per_device"/>
+        <rdfs:comment>| High frequency of small data
+packets, 200 bytes every 5ms gives ~1GB per month</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_Volume_per_device_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_Volume_per_device_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Data_Volume_per_device"/>
+        <rdfs:comment>Low
+Data Volume: ~1GB</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_Volume_per_device_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_Volume_per_device_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Data_Volume_per_device"/>
+        <rdfs:comment>High data volume: 100GB – 1TB per month</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_Volume_per_device_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_Volume_per_device_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Data_Volume_per_device"/>
+        <rdfs:comment>No Cap</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_security_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_security_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Data_security"/>
+        <rdfs:comment>Non</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_security_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_security_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Data_security"/>
+        <rdfs:comment>Identity</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_security_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_security_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Data_security"/>
+        <rdfs:comment>Integrity</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_security_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Data_security_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Data_security"/>
+        <rdfs:comment>Encryption</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Delay_Tolerance_not_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Delay_Tolerance_not_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Delay_tolerance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Delay_Tolerance_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Delay_Tolerance_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Delay_tolerance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type_IoT_Special_devices -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type_IoT_Special_devices">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type_IoT_modules -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type_IoT_modules">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type_Sensors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type_Sensors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type_Smartphones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type_Smartphones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Device_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Dynamic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Dynamic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Operation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#ESIN_Big_data_analytics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#ESIN_Big_data_analytics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#ESIN_Cloud_computing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#ESIN_Cloud_computing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#ESIN_Data_storage_systems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#ESIN_Data_storage_systems"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#ESIN_Edge_computing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#ESIN_Edge_computing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#ESIN_Positioning_platform -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#ESIN_Positioning_platform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Energy_efficiency_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Energy_efficiency_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Energy_efficiency"/>
+        <rdfs:comment>rarely</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Energy_efficiency_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Energy_efficiency_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Energy_efficiency"/>
+        <rdfs:comment>often</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Energy_efficiency_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Energy_efficiency_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Energy_efficiency"/>
+        <rdfs:comment>always</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support_Not_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support_Not_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support_Single_Cell_Point_to_Multipoint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support_Single_Cell_Point_to_Multipoint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support_Unicast -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support_Unicast">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Isolation"/>
+        <rdfs:comment>Sharing</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Isolation"/>
+        <rdfs:comment>Hybrid</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Isolation"/>
+        <rdfs:comment>dedicate</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Latency_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Latency_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Latency"/>
+        <rdfs:comment>Not critical (more than 100 ms)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Latency_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Latency_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Latency"/>
+        <rdfs:comment>Moderate (10-100 ms)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Latency_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Latency_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Latency"/>
+        <rdfs:comment>Low (1-10 ms)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Latency_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Latency_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Latency"/>
+        <rdfs:comment>Ultra-low (&lt;1 ms)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MCData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MCData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_service_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MCPTT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MCPTT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_service_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MCVideo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MCVideo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_service_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MC_interworking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MC_interworking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_service_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MMTel_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MMTel_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MMTel_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MMTel_unsupported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MMTel_unsupported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MMTel_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MPS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MPS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MPS_for_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MPS_for_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MPS_for_MMTel_video -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MPS_for_MMTel_video">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MPS_for_MMTel_voice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#MPS_for_MMTel_voice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_capability_support_Inter_user_prioritization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_capability_support_Inter_user_prioritization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_capability_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_capability_support_Local_control -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_capability_support_Local_control">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_capability_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_capability_support_Pre_emption -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_capability_support_Pre_emption">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission-critical_capability_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission_critical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission_critical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission_critical_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_capability_support_Pre-emption -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_capability_support_Pre-emption">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_capability_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_capability_support_User_prioritization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_capability_support_User_prioritization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service_capability_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NB-IoT_Support_Not_Supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NB-IoT_Support_Not_Supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NB-IoT_Support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NB-IoT_Support_Supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NB-IoT_Support_Supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NB-IoT_Support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST_for_High-Performance_Machine-Type_Communications -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST_for_High-Performance_Machine-Type_Communications">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST_for_Massive_IoT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST_for_Massive_IoT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST_for_Public_Safety -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST_for_Public_Safety">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST_for_enhanced_Mobile_Broadband_with_IMS_support -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST_for_enhanced_Mobile_Broadband_with_IMS_support">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST_for_ultra-reliable_and_ultra-low_latency_communication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST_for_ultra-reliable_and_ultra-low_latency_communication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NEST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NSSAA_Not_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NSSAA_Not_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NSSAA_required"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NSSAA_Supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NSSAA_Supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#NSSAA_required"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_slice_energy_efficiency_KPI_Supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_slice_energy_efficiency_KPI_Supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_slice_energy_efficiency_KPI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_slice_energy_efficiency_KPI_not_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_slice_energy_efficiency_KPI_not_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_slice_energy_efficiency_KPI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Non_MPS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Non_MPS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Multimedia_Priority_Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Non_mission_critical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Non_mission_critical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Mission_critical_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Operator_defined_class -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Operator_defined_class">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Simultaneous_Use_Class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PM_Per_hour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PM_Per_hour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Monitoring_sample_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PM_Per_minute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PM_Per_minute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Monitoring_sample_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PM_Per_second -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PM_Per_second">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Monitoring_sample_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Latency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Latency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Per_hour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Per_hour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Prediction_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Per_minute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Per_minute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Prediction_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Per_second -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Per_second">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Prediction_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Service_Request_Success_Rate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Service_Request_Success_Rate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Throughput -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Throughput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PP_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability_AECID -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability_AECID">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability_CIDE-CID -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability_CIDE-CID">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability_Hybrid_positioning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability_Hybrid_positioning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability_NET_RTK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability_NET_RTK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability_OTDOA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability_OTDOA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability_RF_fingerprinting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability_RF_fingerprinting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Prediction_frequency_Per_hour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Prediction_frequency_Per_hour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Prediction_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Prediction_frequency_Per_minute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Prediction_frequency_Per_minute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Prediction_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Prediction_frequency_Per_second -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Prediction_frequency_Per_second">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#PS_Prediction_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#QoS_Ressrouce_Type_Delay_critical_GBR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#QoS_Ressrouce_Type_Delay_critical_GBR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Resource_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#QoS_Ressrouce_Type_GBR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#QoS_Ressrouce_Type_GBR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Resource_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#QoS_Ressrouce_Type_Non_GBR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#QoS_Ressrouce_Type_Non_GBR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Resource_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Reliability_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Reliability_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Reliability"/>
+        <rdfs:comment>Not critical</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Reliability_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Reliability_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Reliability"/>
+        <rdfs:comment>| Moderate (&gt;90 %)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Reliability_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Reliability_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Reliability"/>
+        <rdfs:comment>High (&gt;99.9)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Reliability_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Reliability_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Reliability"/>
+        <rdfs:comment>Extremely high (&gt;99.999 %)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Reliability_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Reliability_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Reliability"/>
+        <rdfs:comment>Uptime critical at any time</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Root_cause_investigation_Active_investigaion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Root_cause_investigation_Active_investigaion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Root_cause_investigation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Root_cause_investigation_Not_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Root_cause_investigation_Not_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Root_cause_investigation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Root_cause_investigation_Passive_investigaion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Root_cause_investigation_Passive_investigaion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Root_cause_investigation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#SCS_mode1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#SCS_mode1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Session_and_Service_Continuity_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#SCS_mode2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#SCS_mode2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Session_and_Service_Continuity_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#SCS_mode3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#SCS_mode3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Session_and_Service_Continuity_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Static -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Static">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Operation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Support_for_non-IP_traffic_not_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Support_for_non-IP_traffic_not_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Support_for_non-IP_traffic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Support_for_non-IP_traffic_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Support_for_non-IP_traffic_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Support_for_non-IP_traffic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Availability_Between_BS_and_UE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Availability_Between_BS_and_UE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Availability_Not_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Availability_Not_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Throughput_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Throughput_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Throughput"/>
+        <rdfs:comment>very low (less than 100 kbps)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Throughput_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Throughput_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Throughput"/>
+        <rdfs:comment>low (100 kbps – 1 Mbps)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Throughput_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Throughput_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Throughput"/>
+        <rdfs:comment>moderate (1 Mbps – 10 Mbps)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Throughput_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Throughput_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Throughput"/>
+        <rdfs:comment>high (10 Mbps-1 Gbps)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Throughput_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Throughput_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Throughput"/>
+        <rdfs:comment>very high (more than 1 Gbps)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Traffic_type_Receiving_mostly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Traffic_type_Receiving_mostly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Traffic_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Traffic_type_Transmitting_mostly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Traffic_type_Transmitting_mostly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Traffic_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Traffic_type_Varying -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Traffic_type_Varying">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Traffic_type"/>
+        <rdfs:comment>Bursty traffic patterns (Uplink and
+downlink) [Random burstiness; Predefined (e.g. based on
+time of day)]</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Traffic_type_same_Receiving_and_transmitting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Traffic_type_same_Receiving_and_transmitting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Traffic_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Typical_data_profile_Telematics_data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Typical_data_profile_Telematics_data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Typical_data_profile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Typical_data_profile_Text -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Typical_data_profile_Text">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Typical_data_profile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Typical_data_profile_Video -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Typical_data_profile_Video">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Typical_data_profile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Typical_data_profile_Voice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Typical_data_profile_Voice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Typical_data_profile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#User_management_openness_Not_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#User_management_openness_Not_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#User_management_openness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#User_management_openness_Supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#User_management_openness_Supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#User_management_openness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode_Not_supported -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode_Not_supported">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode_YES_EUTRA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode_YES_EUTRA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode_YES_NR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode_YES_NR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode_YES_NR_and_E_UTRA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode_YES_NR_and_E_UTRA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#V2X_communication_mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Automative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Automative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Automative_Critical_Communications -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Automative_Critical_Communications">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_EDGE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_EDGE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Energy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Gaming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Gaming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Healthcare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Healthcare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Public_Safety -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Public_Safety">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Smart_Cities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Smart_Cities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Special_needs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Special_needs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Special_vehicles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Special_vehicles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Utilities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Utilities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Availability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Availability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Cost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Cost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Cost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Error_rate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Error_rate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Error_rate_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Jitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Jitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Jitter_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Latency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Latency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Latency_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Portability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Portability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Portability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Reliability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Reliability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Reliability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Security"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Throughput -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#1_Star_Throughput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Throughput_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Availability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Availability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Cost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Cost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Cost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Error_rate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Error_rate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Error_rate_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Jitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Jitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Jitter_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Latency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Latency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Latency_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Portability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Portability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Portability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Reliability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Reliability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Reliability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Security"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Throughput -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#2_Star_Throughput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Throughput_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Availability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Availability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Cost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Cost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Cost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Error_rate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Error_rate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Error_rate_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Jitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Jitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Jitter_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Latency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Latency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Latency_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Portability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Portability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Portability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Reliability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Reliability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Reliability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Security"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Throughput -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3_Star_Throughput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Throughput_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Availability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Availability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Cost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Cost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Cost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Error_rate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Error_rate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Error_rate_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Jitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Jitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Jitter_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Latency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Latency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Latency_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Portability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Portability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Portability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Reliability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Reliability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Reliability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Security"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Throughput -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#4_Star_Throughput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Throughput_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Availability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Availability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Cost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Cost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Cost"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Error_rate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Error_rate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Error_rate_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Jitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Jitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Jitter_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Latency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Latency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Latency_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Portability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Portability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Portability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Reliability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Reliability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Reliability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Security"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Throughput -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#5_Star_Throughput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Throughput_Requirement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#ESIN__ID/asset_management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#ESIN__ID/asset_management"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support_Broadcast/Multicast -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support_Broadcast/Multicast">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support_Broadcast/Multicast_+_SC-PTM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support_Broadcast/Multicast_+_SC-PTM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Group_communication_support"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Availability_Between_BS_and_UE_&amp;_UE_and_UE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Availability_Between_BS_and_UE_&amp;_UE_and_UE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Synchronicity_Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_AR/VR_Providers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_AR/VR_Providers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Government_&amp;_Public_Safety -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Government_&amp;_Public_Safety">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Industrial/Manufacturing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Industrial/Manufacturing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Industrial_IoT;_Critical_Comm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Industrial_IoT;_Critical_Comm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Media_&amp;_Entertainment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Media_&amp;_Entertainment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Transport_&amp;_Logistics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical_Transport_&amp;_Logistics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Vertical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Averaging_Window"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_Data_Burst_Volume"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Maximum_Packet_Loss_Rate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Packet_Delay_Budget"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Packet_Error_Rate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Priority_Level"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Resource_Type"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#3GPP_5QI"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#CPU_Slice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#RAM_Slice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Storage_Slice"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_CPU"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_RAM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Flavour_Storage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Functional"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Non_Functional"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Quality_of_Service"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Isolation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Logical_Isolation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Physical_Isolation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Availability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Cost"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Portability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Reliability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Security"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Error_rate_Requirement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Jitter_Requirement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Latency_Requirement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#UserApp_Throughput_Requirement"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#slice">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#cloudflavour">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#userapp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#app">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#appinstance">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#networkflavour">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud_Slice_Sastify_UserApp</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Sastify_Cloud_Flavour"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#slice"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#cloudflavour"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_App"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#userapp"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#app"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_App_Instance"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#app"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#appinstance"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App_Instance_Sastify_UserApp"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#appinstance"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#userapp"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#appinstance"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#cloudflavour"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Cloud_Slice_Sastify_UserApp"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#slice"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#userapp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network_Slice_Sastify_UserApp</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice_Sastify_Network_Flavour"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#slice"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#networkflavour"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_App"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#userapp"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#app"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_App_Instance"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#app"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#appinstance"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App_Instance_Sastify_UserApp"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#appinstance"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#userapp"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_Cloud_Flavour"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#appinstance"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#networkflavour"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#Network_Slice_Sastify_UserApp"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#slice"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#userapp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">from_App</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#App_Instance_Sastify_UserApp"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#appinstance"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#userapp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#has_App_Instance"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#app"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#appinstance"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/ZIMOAPP#from_App"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#userapp"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hungbui/ontologies/2022/0/GSM#app"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
